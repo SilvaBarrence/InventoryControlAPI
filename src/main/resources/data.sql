@@ -1,3 +1,3 @@
-INSERT INTO PRODUTOS(name, id, quantidade) VALUES('Camiseta', 1, 20);
-INSERT INTO PRODUTOS(name, id, quantidade) VALUES('Calça slim', 2, 50);
-INSERT INTO PRODUTOS(name, id, quantidade) VALUES('Meia', 3, 2);
+INSERT INTO PRODUTOS(id, name, quantity) VALUES(1,'Camiseta', 20);
+INSERT INTO PRODUTOS(id, name, quantity) VALUES( 2,'Calça slim', 50);
+INSERT INTO PRODUTOS(id, name, quantity) VALUES( 3,'Meia', 2);

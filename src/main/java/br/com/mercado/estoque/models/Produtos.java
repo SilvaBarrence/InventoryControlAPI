@@ -12,7 +12,25 @@ public class Produtos {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
-	private Long quantidade;
+	private Long quantity;
+
+
+	
+	public Long getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(Long quantity) {
+		this.quantity = quantity;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	public Long getId() {
 		return id;
@@ -20,10 +38,6 @@ public class Produtos {
 
 	public String getName() {
 		return name;
-	}
-
-	public Long getQuantidade() {
-		return quantidade;
 	}
 
 }
