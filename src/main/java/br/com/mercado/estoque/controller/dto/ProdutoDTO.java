@@ -12,9 +12,9 @@ public class ProdutoDTO {
 	private Long quantity;
 	
 	public ProdutoDTO(Produtos produtos) {
-		this.id = id;
-		this.name = name;
-		this.quantity = quantity;
+		this.id = produtos.getId();
+		this.name = produtos.getName();
+		this.quantity = produtos.getQuantity();
 	}
 
 	public Long getId() {

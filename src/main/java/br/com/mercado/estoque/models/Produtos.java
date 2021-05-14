@@ -13,9 +13,18 @@ public class Produtos {
 	private Long id;
 	private String name;
 	private Long quantity;
+	private Double value;
 
 
 	
+	public Double getValue() {
+		return value;
+	}
+
+	public void setValue(Double value) {
+		this.value = value;
+	}
+
 	public Long getQuantity() {
 		return quantity;
 	}
