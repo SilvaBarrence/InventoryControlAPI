@@ -10,7 +10,7 @@ public class ProdutoDTO {
 	private Long id;
 	private String name;
 	private Long quantity;
-	
+
 	public ProdutoDTO(Produtos produtos) {
 		this.id = produtos.getId();
 		this.name = produtos.getName();
@@ -32,6 +32,5 @@ public class ProdutoDTO {
 	public static List<ProdutoDTO> converter(List<Produtos> produtos) {
 		return produtos.stream().map(ProdutoDTO::new).collect(Collectors.toList());
 	}
-	
-	
+
 }

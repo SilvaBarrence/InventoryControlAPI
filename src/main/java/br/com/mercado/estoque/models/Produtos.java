@@ -15,8 +15,15 @@ public class Produtos {
 	private Long quantity;
 	private Double value;
 
+	public Produtos() {
+	}
 
-	
+	public Produtos(String name, Long quantity, Double value) {
+		this.name = name;
+		this.quantity = quantity;
+		this.value = value;
+	}
+
 	public Double getValue() {
 		return value;
 	}
