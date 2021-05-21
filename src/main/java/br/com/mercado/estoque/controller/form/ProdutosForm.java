@@ -6,21 +6,19 @@ import javax.validation.constraints.NotEmpty;
 
 import br.com.mercado.estoque.models.Produtos;
 
-
 public class ProdutosForm {
 
 	private Long id;
-	
-	@NotNull @NotEmpty
+
+	@NotNull
+	@NotEmpty
 	private String name;
 
 	@NotNull
 	private Long quantity;
-	
+
 	@NotNull
 	private Double value;
-	
-	
 
 	public Double getValue() {
 		return value;

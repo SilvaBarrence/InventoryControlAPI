@@ -10,11 +10,19 @@ public class ProdutoDTO {
 	private Long id;
 	private String name;
 	private Long quantity;
+	private Double value;
 
 	public ProdutoDTO(Produtos produtos) {
 		this.id = produtos.getId();
 		this.name = produtos.getName();
 		this.quantity = produtos.getQuantity();
+		this.value = produtos.getValue();
+	}
+
+	
+	
+	public Double getValue() {
+		return value;
 	}
 
 	public Long getId() {
